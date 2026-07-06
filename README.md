@@ -2,5 +2,5 @@
 
 ## Contributors
 
-- Professor's Name
+- Sue Sampson
 - Kobe Alexander
