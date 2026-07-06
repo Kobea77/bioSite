@@ -1,0 +1,409 @@
+/*
+    Name: Kobe Alexander
+    Project: bioSite
+    File: Shared Style Sheet
+*/
+
+:root {
+    --mint-green: #A8D5BA;
+    --light-mint: #DDF2E5;
+    --blush-pink: #F6C6C7;
+    --light-pink: #FCE4E4;
+    --lavender: #CDB4DB;
+    --light-lavender: #EEE4F3;
+    --sky-blue: #BDE0FE;
+    --cream: #FFF8E7;
+    --off-white: #FFFDF9;
+    --charcoal: #333333;
+    --deep-green: #4F7D67;
+    --border-color: #D9D9D9;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    background-color: var(--off-white);
+    color: var(--charcoal);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header and Navigation */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 8%;
+    background-color: var(--off-white);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.site-brand h1 {
+    margin: 0;
+    color: var(--deep-green);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+nav {
+    display: flex;
+    gap: 24px;
+}
+
+nav a {
+    color: var(--charcoal);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a.active {
+    color: var(--deep-green);
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+/* Main Layout */
+
+main {
+    width: 86%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Landing Page Hero */
+
+.hero {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 45px;
+    align-items: center;
+    min-height: 420px;
+    padding: 50px 0;
+}
+
+.eyebrow {
+    margin-bottom: 8px;
+    color: var(--deep-green);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.hero h2,
+.page-heading h2 {
+    margin: 0 0 18px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2.6rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.hero h2 span,
+.page-heading h2 span {
+    color: var(--deep-green);
+}
+
+.hero-text > p:not(.eyebrow) {
+    max-width: 500px;
+    margin-bottom: 25px;
+    font-size: 1rem;
+}
+
+.button-link {
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: var(--mint-green);
+    color: var(--charcoal);
+    border-radius: 8px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.button-link:hover {
+    background-color: var(--blush-pink);
+}
+
+/* Image Placeholders */
+
+.image-placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 180px;
+    border: 2px dashed #B7B7B7;
+    border-radius: 14px;
+    color: #777777;
+    text-align: center;
+}
+
+/* Actual Images */
+
+.hero-image {
+    width: 100%;
+    max-width: 450px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 14px;
+    justify-self: center;
+}
+
+.portrait-image {
+    width: 100%;
+    max-width: 350px;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+.hobby-image {
+    width: 260px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+.card-image {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+.motherhood-image {
+    object-position: center 35%;
+}
+
+/* Landing Page Highlight Section */
+
+.highlights {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.highlights h2,
+.external-link h2,
+.quote-section h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.9rem;
+    font-weight: 500;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 30px;
+}
+
+.story-card {
+    padding: 18px;
+    border-radius: 16px;
+    text-align: left;
+}
+
+.story-card h3,
+.hobby-card h3,
+.bio-content h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.story-card p {
+    margin-bottom: 0;
+}
+
+/* Pastel Card Colors */
+
+.mint-card {
+    background-color: var(--light-mint);
+}
+
+.pink-card {
+    background-color: var(--light-pink);
+}
+
+.lavender-card {
+    background-color: var(--light-lavender);
+}
+
+/* External Link Section */
+
+.external-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    margin: 25px 0 55px;
+    padding: 25px;
+    background-color: #E7F3FD;
+    border-radius: 16px;
+}
+
+.external-link h2 {
+    margin: 0 0 8px;
+}
+
+.external-link p {
+    margin: 0;
+}
+
+.external-link a {
+    flex-shrink: 0;
+    color: var(--deep-green);
+    font-weight: 700;
+}
+
+/* Page Headings */
+
+.page-heading {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 50px 0 35px;
+    text-align: center;
+}
+
+.page-heading > p:last-child {
+    font-size: 1rem;
+}
+
+/* About Page */
+
+.about-layout {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 40px;
+    align-items: start;
+    padding-bottom: 40px;
+}
+
+.bio-content h3 {
+    margin-top: 0;
+}
+
+.bio-content p {
+    margin-bottom: 18px;
+}
+
+.quote-section {
+    margin: 25px 0 55px;
+    padding: 35px;
+    background-color: var(--light-lavender);
+    border-radius: 16px;
+    text-align: center;
+}
+
+.quote-section blockquote {
+    margin: 15px auto 0;
+    max-width: 700px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.4rem;
+    font-style: italic;
+}
+
+/* Hobbies Page */
+
+.hobby-list {
+    display: grid;
+    gap: 20px;
+    padding-bottom: 50px;
+}
+
+.hobby-card {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 25px;
+    align-items: center;
+    padding: 22px;
+    border-radius: 16px;
+}
+
+.hobby-card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.hobby-card p {
+    margin: 0;
+}
+
+/* Footer */
+
+footer {
+    padding: 20px;
+    background-color: var(--light-mint);
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Layout */
+
+@media (max-width: 800px) {
+    header {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav {
+        gap: 18px;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    .hero,
+    .about-layout,
+    .hobby-card {
+        grid-template-columns: 1fr;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        gap: 30px;
+        padding: 40px 0;
+    }
+
+    .hero h2,
+    .page-heading h2 {
+        font-size: 2.2rem;
+    }
+
+    .hero-image {
+        max-width: 100%;
+        height: 260px;
+    }
+
+    .portrait-image {
+        max-width: 350px;
+        height: 400px;
+        margin: 0 auto;
+    }
+
+    .hobby-image {
+        width: 100%;
+        height: 220px;
+    }
+
+    .external-link {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
